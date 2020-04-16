@@ -1,0 +1,313 @@
+.blog-ninja {
+  margin-top: 80px;
+}
+
+.blog-container {
+  background-image: url("../img/bg-blog.png");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: 100% -1%;
+  padding-bottom: 50px;
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.blog-ninja .ninja-heading {
+  justify-content: start;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* blog main*/
+.blog-hot>.row>.col-xl-6:first-child {
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+
+.blog-hot>.row>.col-xl-6:last-child {
+    padding-left: 5px;
+}
+
+.blog-hot-main {
+    min-height: 550px;
+}
+
+.blog-hot-main-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 45px;
+    padding-right: 45px;
+}
+  
+/* blog sub */
+.blog-top, .blog-bottom{
+    padding-right: 0;
+}
+
+.blog-link {
+    margin-bottom: 10px;
+}
+
+.blog-sub {
+    display: flex;
+}
+
+.blog-sub-img {
+    width: 35%;
+}
+
+.blog-hot-main, .blog-sub, .blog-other-item, .blog-link {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-hot-main img, .blog-sub-img img {
+    display: inline-block;
+}
+
+.blog-hot-link, .blog-hot-link:hover, .blog-link, .blog-link:hover{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+/* info blog */
+.blog-sub-content {
+    background-color: #fafafa;
+    color: #000000;
+    padding: 25px 20px;
+}
+
+.blog-date {
+    display: inline-block;
+    font-size: 0.875rem;
+    background-color: #d32f2f;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.blog-title {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 445px;
+}
+
+.blog-sub-content .blog-title {
+    width: 298px;
+}
+
+.blog-desc {
+    font-size: 0.875rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 23px;
+    -webkit-line-clamp: 3; /* IE not support */
+    height: 69px;
+    display: -webkit-box; /* IE not support */
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+}
+
+/* blog other */
+
+.blog-all-title {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.blog-other-item img {
+    display: block;
+    width: 100%;
+    min-height: 345px;
+}
+
+.blog-other-title {
+    background-color: #ebebeb;
+    padding: 20px;
+    color: #333;
+    min-height: 105px;
+}
+
+.blog-other-title p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3; /* IE not support */
+    height: 75px;
+    display: -webkit-box; /* IE not support */
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+}
+
+.blog-other .blog-link:hover, .blog-other .blog-link:focus, .blog-other .blog-link:active {
+    box-shadow: -1px 3px 36px -17px rgba(0, 0, 0, 0.83) !important;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+/* pagination */
+.blog-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin: 60px auto 0;
+}
+
+.pagination-item {
+    display: inline-block;
+    display: inline-block;
+    min-width: 53px;
+    height: 53px;
+    margin: auto 10px;
+    font-size: 1.875rem;
+    color: #aaa;
+    font-weight: 700;
+    border: 1.5px solid #ccc;
+    border-radius: 50%;
+    transition: all .2s ease;
+    text-align: center;
+    line-height: 53px;
+    text-decoration: none;
+}
+
+.pagination-item.active , .pagination-item:hover {
+    color: #cc0000;
+    border-color: #cc0000;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1600px){
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
+    .blog-title, .blog-sub-content .blog-title {
+        width: 525px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .blog-link {
+        margin-bottom: 20px;
+    }
+
+    .blog-other .blog-link {
+        margin-bottom: 30px;
+    }
+
+    .blog-hot-main img {
+        width: 100%;
+        height: auto;
+        min-height: 285px;
+    }
+
+    .blog-hot-main {
+        min-height: auto;
+    }
+
+    .blog-pagination {
+        max-width: 100%;
+    }
+
+    .blog-hot>.row>.col-xl-6:first-child {
+        padding-right: 15px;
+    }
+
+    .blog-ninja .ninja-heading {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+        
+    .blog-all-title {
+        font-size: 2.25rem;
+        margin-top: 30px;
+    }
+
+    .blog-hot-main-content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .blog-title {
+        white-space: inherit;
+        width: auto;
+        line-height: 25px;
+        -webkit-line-clamp: 2; /* IE not support */
+        height: 50px;
+        display: -webkit-box; /* IE not support */
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -ms-box-orient: vertical;
+        -o-box-orient: vertical;
+    }
+
+    .blog-desc {
+        -webkit-line-clamp: 3; /* IE not support */
+        height: 69px;
+    }
+
+    .blog-sub-content .blog-title {
+        width: auto;
+    }
+
+    .blog-sub {
+        flex-direction: column;
+    }
+
+    .blog-sub-img {
+        width: 100%;
+    }
+
+    .blog-sub-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* other */
+    .blog-other-item {
+        display: flex;
+    }
+
+    .blog-other-item img {
+        width: 40%;
+        min-height: 165px;
+    }
+
+    .blog-ninja .ninja-heading {
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
+
+    .blog-all-title {
+        margin-top: 20px;
+    }
+}
