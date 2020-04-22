@@ -227,6 +227,15 @@
   margin: 0;
 }
 
+.error-detail {
+  width: 100%;
+  font-size: 12px;
+  display: block;
+  padding: 5px 0 0;
+  line-height: 1.22;
+  color: #cc0000;
+}
+
 #fb-phone {
   padding-top: 0.7em;
   font-size: 1.25rem;
