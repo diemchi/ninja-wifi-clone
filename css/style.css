@@ -463,6 +463,10 @@ html {
   margin-bottom: 18px;
 }
 
+.footer-row .border-around {
+  align-self: flex-start;
+}
+
 .footer-detail-info {
   margin-left: 15px;
 }
